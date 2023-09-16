@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import removeIcon from "../../assets/remove.svg";
 import { useState } from "react";
 import useGlobalContext from "../../hooks/useGlobalContext.js";
+import formatterToMoney from "../../helpers/formatter.ts";
 
 type Props = {
   products: ProductsType;
@@ -36,7 +37,7 @@ export default function ProductCard({ products }: Props) {
         <p>{products.description}</p>
         <div className={styles["content-price-qty"]}>
           <span>{products.stock} Unidades</span>
-          <strong>R$ {products.value}</strong>
+          <strong>{formatterToMoney(products.value)}</strong>
         </div>
       </div>
     </div>
