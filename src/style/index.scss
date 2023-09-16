@@ -1,0 +1,23 @@
+@use "buttons";
+@use "inputs";
+@import "colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.192);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.322);
+  }
+}

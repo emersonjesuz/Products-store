@@ -1,0 +1,45 @@
+@import "../../style/colors";
+.backDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.modal {
+  width: 404px;
+  height: 184px;
+  border-radius: 8px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 48px 38px 44px 38px;
+
+  h2 {
+    color: $text-color;
+
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123.5%;
+    letter-spacing: 0.25px;
+  }
+}
+
+.conteiner-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    width: 156px;
+  }
+}

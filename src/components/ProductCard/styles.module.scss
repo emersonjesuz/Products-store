@@ -1,0 +1,94 @@
+@import "../../style/colors";
+.container {
+  width: 232px;
+  height: 433px;
+  padding-top: 10px;
+  border-radius: 24px;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.233);
+    transition: all 0.5s;
+  }
+}
+
+.remove {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+  min-height: 240px;
+
+  border-radius: 16px 16px 0px 0px;
+}
+
+.content-infos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 17px;
+  font-family: "Roboto", sans-serif;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: $text-color-gray-200;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+
+    color: $text-color-gray-500;
+
+    height: 80px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.content-price-qty {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: $text-color-gray-100;
+  }
+
+  strong {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-color;
+  }
+}

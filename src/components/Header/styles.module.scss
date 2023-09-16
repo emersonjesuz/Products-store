@@ -1,0 +1,15 @@
+@import "../../style/colors";
+.conteiner {
+  width: 100vw;
+  height: 64px;
+  background-color: $header-color;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 40px;
+    width: auto;
+    margin-left: 16px;
+  }
+}

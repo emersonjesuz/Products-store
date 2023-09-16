@@ -1,0 +1,30 @@
+@import "../../style/colors";
+.conteiner {
+  width: 100%;
+}
+
+.sub-title {
+  margin-top: 62px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.25px;
+    color: $text-color;
+  }
+}
+
+.content-products {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: 460px;
+  max-width: 97vw;
+  overflow-x: scroll;
+
+  margin-top: 62px;
+}

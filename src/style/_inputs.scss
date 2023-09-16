@@ -1,0 +1,30 @@
+@import "colors";
+
+@mixin text-config {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.15px;
+  font-style: normal;
+}
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  background-color: transparent;
+  height: 48px;
+  width: 100%;
+  padding: 0 16px;
+
+  &::placeholder {
+    @include text-config();
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+label {
+  @include text-config();
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
