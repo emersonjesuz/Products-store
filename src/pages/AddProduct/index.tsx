@@ -1,8 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
-import styles from "./styles.module.scss";
-import useGlobalContext from "../../hooks/useGlobalContext.tsx";
 import { ChangeEvent, FormEvent, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import useGlobalContext from "../../hooks/useGlobalContext.tsx";
 import { ProductsType } from "../../types/ProductsType.ts";
+import notify from "../../utils/notify.ts";
+import styles from "./styles.module.scss";
 
 const defaultForm = {
   id: 0,
@@ -38,7 +39,8 @@ export default function AddProduct() {
     localProducts.push({ ...form });
 
     setAllProducts([...localProducts]);
-    console.log(allProducts);
+
+    notify("Produto inserido com sucesso!", "success");
 
     navegate("/main");
   }

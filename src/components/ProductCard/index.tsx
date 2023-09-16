@@ -19,7 +19,7 @@ export default function ProductCard({ products }: Props) {
     >
       {showDelete && (
         <img
-          onClick={handleOpenModal}
+          onClick={() => handleOpenModal(products.id)}
           src={removeIcon}
           className={styles.remove}
           alt="remove icon"

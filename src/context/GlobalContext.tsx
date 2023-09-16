@@ -4,7 +4,7 @@ type GlobalContextType = {
   openModal: boolean;
   handleConfirmModal: () => void;
   handleCloseModal: () => void;
-  handleOpenModal: () => void;
+  handleOpenModal: (productId: number) => void;
   setAllProducts: Dispatch<SetStateAction<ProductsType[]>>;
   allProducts: ProductsType[];
 };

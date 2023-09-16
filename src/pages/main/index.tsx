@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 export default function Main() {
   const navegate = useNavigate();
 
-  const { allProducts, setAllProducts } = useGlobalContext();
+  const { allProducts } = useGlobalContext();
   return (
     <div className={styles.conteiner}>
       <div className={styles["sub-title"]}>
